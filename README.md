@@ -9,7 +9,7 @@ Basically, you will use a google map to find the nearest cafe. And if you want t
 <ul>
 <li>create basic user account</li>
 <li> allow user to select their favourite cafes </li>
-<li> if they want to have a cup of coffee, find the nearest cafe from their current location</li>
+<li> if they want to have a cup of coffee, find their nearest favourite cafe from their current location</li>
 <li>if they want to have a coffee meet with their friend, find the nearest cafe depeding on both of their location</li>
 </ul>
 
