@@ -1,10 +1,10 @@
 import { Injectable } from '@nestjs/common';
 import { InjectRepository } from '@nestjs/typeorm';
 import { findNearest } from 'geolib';
-import { User } from 'src/user/entity/user.entity';
-import { UserService } from 'src/user/user.service';
-import { CreateNewEntry } from 'src/utils/createNew.response';
-import { NearestCafe } from 'src/utils/nearestCafe.response';
+import { User } from '../user/entity/user.entity';
+import { UserService } from '../user/user.service';
+import { CreateNewEntry } from '../utils/createNew.response';
+import { NearestCafe } from '../utils/nearestCafe.response';
 import { getRepository, Repository } from 'typeorm';
 import { FavouriteCafeDto } from './dto/favouriteCafe.dto';
 import { NearCafeDto } from './dto/nearCafe.dto';
@@ -62,7 +62,6 @@ export class CafeService {
         message: 'cafe added to favourite.',
       };
     } catch (err) {
-      console.log(err);
       return {
         success: false,
         message: err.message,
